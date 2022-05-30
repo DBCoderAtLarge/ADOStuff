@@ -1,0 +1,59 @@
+﻿using System.Collections.Generic;
+
+namespace ADOStuff.DataAccess
+{
+    public class Guard
+    {
+        public static readonly ISet<string> WhiteList = new HashSet<string>(new[]
+        {
+            "[Application].[Cities]",
+            "[Application].[Cities_Archive]",
+            "[Application].[Countries]",
+            "[Application].[Countries_Archive]",
+            "[Application].[DeliveryMethods]",
+            "[Application].[DeliveryMethods_Archive]",
+            "[Application].[PaymentMethods]",
+            "[Application].[PaymentMethods_Archive]",
+            "[Application].[People]",
+            "[Application].[People_Archive]",
+            "[Application].[StateProvinces]",
+            "[Application].[StateProvinces_Archive]",
+            "[Application].[SystemParameters]",
+            "[Application].[TransactionTypes]",
+            "[Application].[TransactionTypes_Archive]",
+            "[Purchasing].[PurchaseOrderLines]",
+            "[Purchasing].[PurchaseOrders]",
+            "[Purchasing].[SupplierCategories]",
+            "[Purchasing].[SupplierCategories_Archive]",
+            "[Purchasing].[Suppliers]",
+            "[Purchasing].[Suppliers_Archive]",
+            "[Purchasing].[SupplierTransactions]",
+            "[Sales].[BuyingGroups]",
+            "[Sales].[BuyingGroups_Archive]",
+            "[Sales].[CustomerCategories]",
+            "[Sales].[CustomerCategories_Archive]",
+            "[Sales].[Customers]",
+            "[Sales].[Customers_Archive]",
+            "[Sales].[CustomerTransactions]",
+            "[Sales].[InvoiceLines]",
+            "[Sales].[Invoices]",
+            "[Sales].[OrderLines]",
+            "[Sales].[Orders]",
+            "[Sales].[SpecialDeals]",
+            "[Warehouse].[ColdRoomTemperatures]",
+            "[Warehouse].[ColdRoomTemperatures_Archive]",
+            "[Warehouse].[Colors]",
+            "[Warehouse].[Colors_Archive]",
+            "[Warehouse].[PackageTypes]",
+            "[Warehouse].[PackageTypes_Archive]",
+            "[Warehouse].[StockGroups]",
+            "[Warehouse].[StockGroups_Archive]",
+            "[Warehouse].[StockItemHoldings]",
+            "[Warehouse].[StockItems]",
+            "[Warehouse].[StockItems_Archive]",
+            "[Warehouse].[StockItemStockGroups]",
+            "[Warehouse].[StockItemTransactions]",
+            "[Warehouse].[VehicleTemperatures]"
+        });
+    }
+}
